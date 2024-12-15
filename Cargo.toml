@@ -1,0 +1,13 @@
+[package]
+name = "source-collector"
+version = "0.1.0"
+edition = "2021"
+description = "A CLI tool for collecting source files into a single file to upload to a LLM"
+
+[[bin]]
+name = "scollect"
+path = "src/main.rs"
+
+[dependencies]
+clap = { version = "4.5.23", features = ["derive"] }
+walkdir = "2.5.0"
